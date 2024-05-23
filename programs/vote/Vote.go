@@ -19,8 +19,8 @@ import (
 	"time"
 
 	bin "github.com/gagliardetto/binary"
-	"github.com/gagliardetto/solana-go"
-	"github.com/gagliardetto/solana-go/text/format"
+	"github.com/ShizuAutomations/solana-go"
+	"github.com/ShizuAutomations/solana-go/text/format"
 	"github.com/gagliardetto/treeout"
 )
 

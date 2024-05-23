@@ -21,7 +21,7 @@ import (
 	"os"
 	"strings"
 
-	zapbox "github.com/gagliardetto/solana-go/zap-box"
+	zapbox "github.com/ShizuAutomations/solana-go/zap-box"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
