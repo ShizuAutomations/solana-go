@@ -29,7 +29,7 @@ import (
 	"github.com/mr-tron/base58"
 	"go.uber.org/zap"
 
-	"github.com/ShizuAutomations/solana-go/text"
+	"github.com/gagliardetto/solana-go/text"
 )
 
 type Transaction struct {

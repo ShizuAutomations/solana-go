@@ -17,7 +17,7 @@ package rpc
 import (
 	"context"
 
-	"github.com/ShizuAutomations/solana-go"
+	"github.com/gagliardetto/solana-go"
 )
 
 // GetStakeActivation returns epoch activation information for a stake account.

@@ -17,7 +17,7 @@ package rpc
 import (
 	"context"
 
-	"github.com/ShizuAutomations/solana-go"
+	"github.com/gagliardetto/solana-go"
 )
 
 // GetTokenSupply returns the total supply of an SPL Token type.

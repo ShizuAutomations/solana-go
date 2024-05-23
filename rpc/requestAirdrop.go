@@ -19,7 +19,7 @@ package rpc
 import (
 	"context"
 
-	"github.com/ShizuAutomations/solana-go"
+	"github.com/gagliardetto/solana-go"
 )
 
 // RequestAirdrop requests an airdrop of lamports to a publicKey.
