@@ -51,7 +51,7 @@ const (
 	// Time allowed to read the next pong message from the peer.
 	pongWait = 60 * time.Second
 	// Send pings to peer with this period. Must be less than pongWait.
-	pingPeriod = (pongWait * 9) / 10
+	pingPeriod = (pongWait * 5) / 10
 )
 
 // Connect creates a new websocket client connecting to the provided endpoint.
@@ -127,7 +127,7 @@ func (c *Client) sendPing() {
 
 	c.conn.SetWriteDeadline(time.Now().Add(writeWait))
 	if err := c.conn.WriteMessage(websocket.PingMessage, []byte{}); err != nil {
-		return
+		c.CloseAndReconnect()
 	}
 }
 
