@@ -114,6 +114,13 @@ func ConnectWithOptions(ctx context.Context, rpcEndpoint string, opt *Options) (
 	return c, nil
 }
 
+func (c *Client) CloseAndReconnect() {
+	c.Close()
+	go func() {
+		c, _ = Connect(c.connCtx, c.rpcURL)
+	}()
+}
+
 func (c *Client) sendPing() {
 	c.lock.Lock()
 	defer c.lock.Unlock()
